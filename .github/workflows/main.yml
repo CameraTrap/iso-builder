@@ -2,10 +2,7 @@ name: build raspbian image
 
 on:
   workflow_dispatch:
-    inputs:
-      tags:
-        description: 'Tag something on your build'
-        required: false
+    
 
 jobs:
   build:

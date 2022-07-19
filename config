@@ -8,4 +8,4 @@ LOCALE_DEFAULT=en_US.UTF-8
 KEYBOARD_KEYMAP=us
 KEYBOARD_LAYOUT="English (US)"
 TIMEZONE_DEFAULT=America/Los_Angeles
-STAGE_LIST="stage2-husam"
+STAGE_LIST="stage0 stage1 stage2 stage2-husam"

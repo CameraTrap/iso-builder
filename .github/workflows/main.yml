@@ -1,0 +1,20 @@
+name: build raspbian image
+
+on:
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Tag something on your build'
+        required: false
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v2
+    
+      - name: run build iso script
+        run: |
+          sudo ./build-docker.sh

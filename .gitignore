@@ -1,9 +1,12 @@
+# pycharm files
+.idea/
+
 deploy/*
 work/*
 config
 postrun.sh
-SKIP
-SKIP_IMAGES
 .pc
 *-pc
 apt-cacher-ng/
+*.log
+__pycache__/

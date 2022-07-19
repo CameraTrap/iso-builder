@@ -18,3 +18,13 @@ jobs:
       - name: run build iso script
         run: |
           sudo ./build-docker.sh
+      
+      - name: Pre-release iso
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.ACCESS_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "CI-latest"
+          files: |
+            deploy/*.zip
